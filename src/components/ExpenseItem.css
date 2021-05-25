@@ -1,0 +1,18 @@
+.expence-item {
+    min-height: 40px;
+}
+
+.Expdate{
+    float: left;
+    min-width: 11%;
+}
+
+.Expdate div {
+    float: left;
+    margin-left: 10px;
+}
+
+.item-row div {
+    float: left;
+    margin-left: 30px;
+}
