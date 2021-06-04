@@ -6,13 +6,14 @@ function ExpenseItem(props: any) {
     const [title, settitle] = useState(props.title);
 
     const changeclicked = () =>{
-        settitle('Updated');        
+        settitle('Updated');
+        console.log(title);        
     }
 
     return <div className="expence-item">
         <ExpenceData date={props.date} />
         <div className="item-row">
-            <div>{props.title}</div>
+            <div>{title}</div>
             <div>{props.cost}</div>
             <div>
                 <button onClick={() => changeclicked()}>Change</button>
