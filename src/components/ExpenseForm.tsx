@@ -7,7 +7,7 @@ const ExpenseForm = (props:any) => {
 
     const titleChangeHandeler = (event:any) => {
         setentiredTitle(event.target.value);
-        console.log(event.target.value);
+        //console.log(event.target.value);
         // setentiredTitle({
         //     ...userInput,
         //     entiredTitle:  event.target.value,
@@ -19,11 +19,11 @@ const ExpenseForm = (props:any) => {
 
     const amountChangeHandeler = (event:any) => {
         setentiredAmount(event.target.value);
-        console.log(event.target.value);
+        //console.log(event.target.value);
     };
     const dateChangeHandeler = (event:any) => {
         setentiredDate(event.target.value);
-        console.log(event.target.value);
+        //console.log(event.target.value);
     };
 
     const submitHandeler =(event:any) => {

@@ -3,21 +3,21 @@ import ExpenceData from './ExpenseDate'
 import './ExpenseItem.css';
 
 function ExpenseItem(props: any) {
-    const [title, settitle] = useState(props.title);
+    // const [title, settitle] = useState(props.title);
 
-    const changeclicked = () =>{
-        settitle('Updated');
-        console.log(title);        
-    }
+    // const changeclicked = () =>{
+    //     settitle('Updated');
+    //     console.log(title);        
+    //}
 
     return <div className="expence-item">
         <ExpenceData date={props.date} />
         <div className="item-row">
-            <div>{title}</div>
+            <div>{props.title}</div>
             <div>{props.cost}</div>
-            <div>
+            {/* <div>
                 <button onClick={() => changeclicked()}>Change</button>
-            </div>
+            </div> */}
         </div>
     </div>
 

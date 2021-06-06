@@ -3,16 +3,11 @@ function Expense(props: any) {
 
     return (
         <div className="App">
-            <ExpenseItem
-                date={props.data[0].date}
-                title={props.data[0].title}
-                cost={props.data[0].amount}
-            />
-            <ExpenseItem
-                date={props.data[1].date}
-                title={props.data[1].title}
-                cost={props.data[1].amount}
-            />
+            {props.items.map((expence:any) => (<ExpenseItem
+                date={expence.date}
+                title={expence.title}
+                cost={expence.amount}
+            />))}           
         </div>
     );
 }
