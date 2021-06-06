@@ -9,9 +9,15 @@ function App() {
     { date: new Date(2012, 2, 30), title: 'Car interface', amount: 123423 },
     { date: new Date(2012, 4, 22), title: 'Bus Interface', amount: 231234 },
   ];
+
+  const addExpenseHandeler = (expence:any) => {
+    console.log('App.js file');
+    console.log(expence);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense = {addExpenseHandeler} />
       <Expense data={expence} />
     </div>
     
