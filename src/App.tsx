@@ -5,8 +5,8 @@ import logo from './logo.svg';
 import './App.css';
 
 const initial_expence = [
-  { date: new Date(2012, 2, 30), title: 'Car interface', amount: 123423 },
-  { date: new Date(2012, 4, 22), title: 'Bus Interface', amount: 231234 },
+  { id:1, date: new Date(2012, 2, 30), title: 'Car interface', amount: 123423 },
+  { id:2, date: new Date(2012, 4, 22), title: 'Bus Interface', amount: 231234 },
 ];
 
 function App() {
